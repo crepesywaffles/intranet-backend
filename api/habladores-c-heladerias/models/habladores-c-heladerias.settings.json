@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "habladores_c_heladerias",
+  "info": {
+    "name": "Habladores_c_heladerias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoria": {
+      "type": "text"
+    },
+    "imagenes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

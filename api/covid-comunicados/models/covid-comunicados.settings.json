@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "covid_comunicados",
+  "info": {
+    "name": "covid_comunicados"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "comunicados": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

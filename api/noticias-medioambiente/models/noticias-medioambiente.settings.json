@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "noticias_medioambientes",
+  "info": {
+    "name": "noticias_medioambiente"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "categoria": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/actualizaciones",
+      "handler": "actualizaciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/actualizaciones/count",
+      "handler": "actualizaciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/actualizaciones/:id",
+      "handler": "actualizaciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/actualizaciones",
+      "handler": "actualizaciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/actualizaciones/:id",
+      "handler": "actualizaciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/actualizaciones/:id",
+      "handler": "actualizaciones.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

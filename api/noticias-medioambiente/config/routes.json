@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/noticias-medioambientes",
+      "handler": "noticias-medioambiente.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/noticias-medioambientes/count",
+      "handler": "noticias-medioambiente.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/noticias-medioambientes/:id",
+      "handler": "noticias-medioambiente.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/noticias-medioambientes",
+      "handler": "noticias-medioambiente.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/noticias-medioambientes/:id",
+      "handler": "noticias-medioambiente.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/noticias-medioambientes/:id",
+      "handler": "noticias-medioambiente.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

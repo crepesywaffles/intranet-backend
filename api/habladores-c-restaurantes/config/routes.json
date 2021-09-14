@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/habladores-c-restaurantes",
+      "handler": "habladores-c-restaurantes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/habladores-c-restaurantes/count",
+      "handler": "habladores-c-restaurantes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/habladores-c-restaurantes/:id",
+      "handler": "habladores-c-restaurantes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/habladores-c-restaurantes",
+      "handler": "habladores-c-restaurantes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/habladores-c-restaurantes/:id",
+      "handler": "habladores-c-restaurantes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/habladores-c-restaurantes/:id",
+      "handler": "habladores-c-restaurantes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

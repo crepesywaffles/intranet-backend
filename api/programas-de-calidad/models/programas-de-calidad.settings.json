@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programas_de_calidads",
+  "info": {
+    "name": "programas de calidad",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoria": {
+      "type": "text"
+    },
+    "documentos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "anexos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "anexo.anexo"
+    }
+  }
+}

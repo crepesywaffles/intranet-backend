@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "habladores_c_artesanos",
+  "info": {
+    "name": "habladores_c_artesano"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoria": {
+      "type": "text"
+    },
+    "imagenes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

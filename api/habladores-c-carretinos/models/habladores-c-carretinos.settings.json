@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "habladores_c_carretinos",
+  "info": {
+    "name": "Habladores_c_carretinos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoria": {
+      "type": "text"
+    },
+    "imagenes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

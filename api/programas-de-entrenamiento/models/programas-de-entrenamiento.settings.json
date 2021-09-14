@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "programas_de_entrenamiento_s",
+  "info": {
+    "name": "Programas de entrenamiento "
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "programas": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "videos",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

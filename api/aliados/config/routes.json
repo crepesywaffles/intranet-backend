@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aliados",
+      "handler": "aliados.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aliados",
+      "handler": "aliados.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aliados",
+      "handler": "aliados.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

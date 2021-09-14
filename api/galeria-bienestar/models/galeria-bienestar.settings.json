@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galeria_bienestars",
+  "info": {
+    "name": "GaleriaBienestar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Evento": {
+      "type": "string"
+    },
+    "Fotos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

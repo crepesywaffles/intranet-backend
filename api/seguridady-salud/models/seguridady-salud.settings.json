@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seguridady_saluds",
+  "info": {
+    "name": "SeguridadySalud",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Slidersst": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "directoriosst": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacto.nombre"
+    },
+    "doc": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

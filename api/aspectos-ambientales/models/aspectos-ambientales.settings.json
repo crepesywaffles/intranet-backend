@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aspectos_ambientales",
+  "info": {
+    "name": "aspectos_ambientales",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "categoria": {
+      "type": "text"
+    },
+    "area": {
+      "type": "text"
+    }
+  }
+}

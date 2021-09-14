@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homesliders",
+  "info": {
+    "name": "homeslider",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sliders": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "url": {
+      "type": "text"
+    }
+  }
+}

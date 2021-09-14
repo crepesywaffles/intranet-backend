@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "habladores_c_restaurantes",
+  "info": {
+    "name": "Habladores_c_restaurantes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoria": {
+      "type": "text"
+    },
+    "imagenes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

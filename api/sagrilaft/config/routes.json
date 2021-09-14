@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sagrilafts",
+      "handler": "sagrilaft.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sagrilafts/count",
+      "handler": "sagrilaft.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sagrilafts/:id",
+      "handler": "sagrilaft.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sagrilafts",
+      "handler": "sagrilaft.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sagrilafts/:id",
+      "handler": "sagrilaft.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sagrilafts/:id",
+      "handler": "sagrilaft.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/habladores-c-carretinos",
+      "handler": "habladores-c-carretinos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/habladores-c-carretinos/count",
+      "handler": "habladores-c-carretinos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/habladores-c-carretinos/:id",
+      "handler": "habladores-c-carretinos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/habladores-c-carretinos",
+      "handler": "habladores-c-carretinos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/habladores-c-carretinos/:id",
+      "handler": "habladores-c-carretinos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/habladores-c-carretinos/:id",
+      "handler": "habladores-c-carretinos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

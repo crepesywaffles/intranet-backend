@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/habladores-c-heladerias",
+      "handler": "habladores-c-heladerias.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/habladores-c-heladerias/count",
+      "handler": "habladores-c-heladerias.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/habladores-c-heladerias/:id",
+      "handler": "habladores-c-heladerias.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/habladores-c-heladerias",
+      "handler": "habladores-c-heladerias.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/habladores-c-heladerias/:id",
+      "handler": "habladores-c-heladerias.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/habladores-c-heladerias/:id",
+      "handler": "habladores-c-heladerias.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

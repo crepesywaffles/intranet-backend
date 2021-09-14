@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aspectos-ambientales",
+      "handler": "aspectos-ambientales.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aspectos-ambientales/count",
+      "handler": "aspectos-ambientales.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aspectos-ambientales/:id",
+      "handler": "aspectos-ambientales.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/aspectos-ambientales",
+      "handler": "aspectos-ambientales.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aspectos-ambientales/:id",
+      "handler": "aspectos-ambientales.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aspectos-ambientales/:id",
+      "handler": "aspectos-ambientales.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

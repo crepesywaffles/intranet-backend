@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dirlegals",
+      "handler": "dirlegal.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dirlegals/count",
+      "handler": "dirlegal.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dirlegals/:id",
+      "handler": "dirlegal.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dirlegals",
+      "handler": "dirlegal.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dirlegals/:id",
+      "handler": "dirlegal.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dirlegals/:id",
+      "handler": "dirlegal.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

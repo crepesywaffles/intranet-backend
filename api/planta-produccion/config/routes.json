@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/planta-produccions",
+      "handler": "planta-produccion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/planta-produccions/count",
+      "handler": "planta-produccion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/planta-produccions/:id",
+      "handler": "planta-produccion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/planta-produccions",
+      "handler": "planta-produccion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/planta-produccions/:id",
+      "handler": "planta-produccion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/planta-produccions/:id",
+      "handler": "planta-produccion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

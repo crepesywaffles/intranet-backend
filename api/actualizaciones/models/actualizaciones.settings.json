@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actualizaciones",
+  "info": {
+    "name": "actualizaciones"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "text"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "url": {
+      "type": "text"
+    },
+    "fecha": {
+      "type": "date"
+    }
+  }
+}

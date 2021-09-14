@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dirlegals",
+  "info": {
+    "name": "dirlegal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "area": {
+      "type": "text"
+    }
+  }
+}

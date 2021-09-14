@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "financieras",
+  "info": {
+    "name": "financiera"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "directorio": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacto.nombre"
+    }
+  }
+}

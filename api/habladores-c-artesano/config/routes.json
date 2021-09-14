@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/habladores-c-artesanos",
+      "handler": "habladores-c-artesano.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/habladores-c-artesanos/count",
+      "handler": "habladores-c-artesano.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/habladores-c-artesanos/:id",
+      "handler": "habladores-c-artesano.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/habladores-c-artesanos",
+      "handler": "habladores-c-artesano.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/habladores-c-artesanos/:id",
+      "handler": "habladores-c-artesano.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/habladores-c-artesanos/:id",
+      "handler": "habladores-c-artesano.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
